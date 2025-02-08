@@ -1,0 +1,53 @@
+.profile-card {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left; /* Align to the left */
+    margin-bottom: 20px; /* Add some space below */
+  }
+  
+  h1 span {
+    display: inline-block;
+    font-size: inherit;
+  }
+  .c { color: #ff7043; }  /* Coral */
+  .o { color: #4fc3f7; }  /* Sky Blue */
+  .l { color: #81c784; }  /* Light Green */
+  .l2 { color: #ffee58; } /* Lemon Yellow */
+  .a { color: #f06292; }  /* Light Pink */
+  .b { color: #ffb74d; }  /* Amber Orange */
+  .z { color: #8e24aa; }  /* Purple */
+  .o2 { color: #64b5f6; } /* Light Blue */
+  .n { color: #66bb6a; }  /* Fresh Green */
+  .e { color: #e57373; }  /* Light Red */
+  
+  .card-header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .card-body p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .card-body strong {
+    color: #333;
+  }
+  

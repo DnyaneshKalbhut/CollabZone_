@@ -1,0 +1,179 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; /* Align to the left */
+  margin-bottom: 20px; /* Add some space below */
+}
+
+h1 span {
+  display: inline-block;
+  font-size: inherit;
+}
+.c { color: #ff7043; }  /* Coral */
+.o { color: #4fc3f7; }  /* Sky Blue */
+.l { color: #81c784; }  /* Light Green */
+.l2 { color: #ffee58; } /* Lemon Yellow */
+.a { color: #f06292; }  /* Light Pink */
+.b { color: #ffb74d; }  /* Amber Orange */
+.z { color: #8e24aa; }  /* Purple */
+.o2 { color: #64b5f6; } /* Light Blue */
+.n { color: #66bb6a; }  /* Fresh Green */
+.e { color: #e57373; }  /* Light Red */
+
+/* Box */
+.signin-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 380px; /* Increased width */
+  text-align: center;
+  margin: 0 10px;
+  transition: transform 0.3s ease; /* Add a subtle animation on hover */
+}
+
+.signin-box:hover {
+  transform: translateY(-5px); /* Hover effect for the signin box */
+}
+
+/* Title */
+.signin-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left; /* Align text to the left */
+}
+
+/* Input Groups */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.input-group input {
+  width: 95%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #f1f1f1; /* Light gray background color for the input */
+}
+
+.input-group input:focus {
+  border-color: #66b0ff;
+  box-shadow: 0 0 5px rgba(13, 128, 251, 0.5);
+  background-color: #fff; /* Lighten background color when focused */
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Sign In Button */
+.signin-button {
+  width: 50%;
+  background: #333; /* Changed background color to dark shade of black */
+  color: white; /* Set text color to white for contrast */
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.signin-button:hover {
+  background: #555; /* Slightly lighter shade of black for hover effect */
+}
+
+/* Remember Me Checkbox */
+.remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.remember-me input {
+  margin-right: 10px;
+}
+
+.remember-me label {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* Sign Up Link */
+.signup-text {
+  font-size: 16px;
+  margin-top: 16px;
+  color: #464646;
+}
+
+.signup-text a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .signin-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .signin-title {
+    font-size: 20px;
+  }
+
+  .input-group input {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .signin-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

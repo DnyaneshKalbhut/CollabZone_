@@ -1,0 +1,6 @@
+@CollabZone_HostAddress = http://localhost:5221
+
+GET {{CollabZone_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
