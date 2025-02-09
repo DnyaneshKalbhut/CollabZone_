@@ -4,6 +4,7 @@ import WaitingRoom from '../Components/WaitingRoom';
 import ChatRoom from '../Components/ChatRoom';
 import ChatBox from '../massageBox/ChatBox';
 import { Circles } from 'react-loader-spinner';
+import './ChatHome.css';
 
 const ChatHome = () => {
     const [connection, setConnection] = useState(null);
@@ -32,7 +33,6 @@ const ChatHome = () => {
 
             try {
                 await connection.start();
-             
             } catch (err) {
                 console.error("Error while starting connection: ", err);
                 setLoading(false);
@@ -59,26 +59,18 @@ const ChatHome = () => {
     };
 
     return (
-        <div className="flex flex-col h-screen bg-gray-900">
-            <main className="container flex-grow mx-auto">
+        <div className="chat-container">
+            <main className="chat-content">
                 {loading ? (
-                    <div className="flex items-center justify-center h-full">
-                        <Circles
-                            height="80"
-                            width="80"
-                            color="#4fa94d"
-                            ariaLabel="circles-loading"
-                            wrapperStyle={{}}
-                            wrapperClass=""
-                            visible={true}
-                        />
-                        <p className="ml-4 text-white">Connecting to chat room...</p>
+                    <div className="loading-container">
+                        <Circles height="80" width="80" color="#4fa94d" ariaLabel="circles-loading" />
+                        <p>Connecting to chat room...</p>
                     </div>
                 ) : (
                     !connection ? (
                         <WaitingRoom JoinChatRoom={joinChatRoom} />
                     ) : (
-                        <div className="flex flex-col h-screen ">
+                        <div className="chat-room">
                             <ChatRoom usermessages={usermessages} />
                             <ChatBox sendMessage={sendMessage} />  
                         </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import './ChatRoom.css'; // Import the new CSS file
 
 const ChatRoom = ({ usermessages }) => {
     const messagesEndRef = useRef(null);
@@ -13,16 +14,16 @@ const ChatRoom = ({ usermessages }) => {
     }, [usermessages]);
 
     return (
-        <div className="h-screen p-4 mt-1 overflow-y-scroll bg-white rounded-lg shadow-lg md:mt-8">
+        <div className="chat-room-container">
             {usermessages.map((msg, index) => (
-                <div key={index} className={`mb-2 p-2 rounded ${msg.isSystem ? 'bg-gray-200' : 'bg-blue-200'}`}>
+                <div key={index} className={`chat-message ${msg.isSystem ? 'system' : 'user'}`}>
                     <strong>{msg.user}: </strong>{msg.message}
                 </div>
             ))}
             <div ref={messagesEndRef} />
         </div>
     );
-}
+};
 
 ChatRoom.propTypes = {
     usermessages: PropTypes.arrayOf(
@@ -35,3 +36,4 @@ ChatRoom.propTypes = {
 };
 
 export default ChatRoom;
+ 

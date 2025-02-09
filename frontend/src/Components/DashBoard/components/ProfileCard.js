@@ -1,62 +1,69 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProfileCard.css";
-import userImage from "../components/user.jpg"; // Adjust path as needed
+import userImage from "./user.jpg";
 
-const API_URL = "http://localhost:5000/api"; // Update if backend runs on a different port
+const ProfileCard = ({ onClose }) => {
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    aadhar: "",
+    profilePic: userImage,
+  });
 
-const ProfileCard = ({ userEmail, onClose, onLogout }) => {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+  const email = localStorage.getItem("userEmail");
 
-  // Fetch user data from backend
   useEffect(() => {
-    const fetchUserData = async () => {
-      if (!userEmail) return;
+    if (!email) return;
 
+    const fetchUserData = async () => {
       try {
-        const response = await fetch(`${API_URL}/user/${userEmail}`);
+        const response = await fetch(`https://localhost:44312/api/auth/user/${email}`);
         if (!response.ok) {
-          throw new Error("User not found");
+          throw new Error("Failed to fetch user data");
         }
         const data = await response.json();
-        setUser(data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
+        setUser({
+          name: data.fullName || "Unknown",
+          email: data.email || "Not Available",
+          aadhar: data.aadhaar || "Not Available",
+          profilePic: data.profilePic || userImage,
+        });
+      } catch (error) {
+        console.error("Error fetching user data:", error);
       }
     };
 
     fetchUserData();
-  }, [userEmail]);
+  }, [email]);
 
-  if (loading) return <p className="text-warning">Loading user data...</p>;
-  if (error) return <p className="text-danger">{error}</p>;
+  const handleLogout = () => {
+    localStorage.removeItem("userEmail"); // Clear user data
+    
+    onClose(); // Ensure this doesn't interfere
+    navigate("/"); // Navigate to SignIn page
+    window.location.reload(); // Force re-render to ensure redirect
+  };
+  
+  
 
   return (
     <div className="profile-card">
       <div className="profile-header">
-        <img src={userImage} alt="Profile" className="profile-pic" />
+        <img src={user.profilePic} alt="Profile" className="profile-pic" />
         <div className="user-info">
           <h5>Hi, {user.name}</h5>
           <p><strong>Email:</strong> {user.email}</p>
-          <p><strong>Aadhaar Card:</strong> {user.aadhaar || "Not available"}</p>
+          <p><strong>Aadhar-Card:</strong> {user.aadhar}</p>
         </div>
       </div>
-
-      {/* Logout Button */}
-      <button className="btn btn-sm btn-danger" onClick={onLogout}>
+      <button className="btn btn-sm logout-btn" onClick={handleLogout}>
         Logout
-      </button>
-
-      {/* Close Button */}
-      <button className="btn btn-sm btn-secondary" onClick={onClose}>
-        Close
       </button>
     </div>
   );
 };
 
-export default ProfileCard;
+export default ProfileCard;

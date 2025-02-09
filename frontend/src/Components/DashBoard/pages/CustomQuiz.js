@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import "./custom.css";
+
+
 
 const CustomQuiz = ({ onCreateQuiz, resetQuiz }) => {
   const [title, setTitle] = useState("");

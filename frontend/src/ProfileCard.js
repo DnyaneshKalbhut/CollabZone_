@@ -1,45 +1,69 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProfileCard.css";
+import userImage from "./user.jpg";
 
-const ProfileCard = ({ userData, setUserData }) => {
+const ProfileCard = ({ onClose }) => {
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    aadhar: "",
+    profilePic: userImage,
+  });
+
   const navigate = useNavigate();
-  const [loading, setLoading] = useState(true);
+  const email = localStorage.getItem("userEmail");
 
   useEffect(() => {
-    if (userData) {
-      setLoading(false);
-    } else {
-      navigate("/"); // Redirect to login if no user data
-    }
-  }, [userData, navigate]);
+    if (!email) return;
+
+    const fetchUserData = async () => {
+      try {
+        const response = await fetch(`https://localhost:44312/api/auth/user/${email}`);
+        if (!response.ok) {
+          throw new Error("Failed to fetch user data");
+        }
+        const data = await response.json();
+        setUser({
+          name: data.fullName || "Unknown",
+          email: data.email || "Not Available",
+          aadhar: data.aadhaar || "Not Available",
+          profilePic: data.profilePic || userImage,
+        });
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+      }
+    };
+
+    fetchUserData();
+  }, [email]);
 
   const handleLogout = () => {
-    setUserData(null); // Clear user data
-    navigate("/signin"); // Redirect to sign in page
+    localStorage.removeItem("userEmail"); // Clear user data
+    
+    onClose(); // Ensure this doesn't interfere
+    navigate("/"); // Navigate to SignIn page
+    window.location.reload(); // Force re-render to ensure redirect
   };
-
-  if (loading) {
-    return <div>Loading...</div>; // Display a loading message/spinner
-  }
+  
+  
 
   return (
     <div className="profile-card">
-      <h1>CollabZone</h1>
-      <div className="card-header">
-        <h2>{userData.fullName}</h2>
+      <div className="profile-header">
+        <img src={user.profilePic} alt="Profile" className="profile-pic" />
+        <div className="user-info">
+          <h5>Hi, {user.name}</h5>
+          <p><strong>Email:</strong> {user.email}</p>
+          <p><strong>Aadhar-Card:</strong> {user.aadhar}</p>
+        </div>
       </div>
-      <div className="card-body">
-        <p><strong>Email:</strong> {userData.email}</p>
-        <p><strong>Aadhar Number:</strong> {userData.aadharNumber}</p>
-      </div>
-      <div className="card-footer">
-        <button onClick={handleLogout} className="logout-button">
-          Log out
-        </button>
-      </div>
+      <button className="btn btn-sm logout-btn" onClick={handleLogout}>
+        Logout
+      </button>
     </div>
   );
 };
 
-export default ProfileCard;
+export default ProfileCard;

@@ -17,15 +17,9 @@ const AppBar = styled(MuiAppBar)(({ theme }) => ({
 export default function Header() {
   const updateOpen = useAppStore((state) => state.updateOpen);
   const dopen = useAppStore((state) => state.dopen);
-  const [showProfile, setShowProfile] = useState(false);
-  const [userEmail, setUserEmail] = useState(null);
-  const profileRef = useRef(null);
 
-  // Retrieve user email from sessionStorage when component mounts
-  useEffect(() => {
-    const storedUser = JSON.parse(sessionStorage.getItem("user"));
-    setUserEmail(storedUser?.email || null);
-  }, []);
+  const [showProfile, setShowProfile] = useState(false);
+  const profileRef = useRef(null);
 
   // Toggle Profile Card
   const handleProfileClick = () => {
@@ -69,31 +63,22 @@ export default function Header() {
 
           {/* App Title */}
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            COLLABZONE
+            CollabZone
           </Typography>
 
-          {/* Profile Icon (Always Visible) */}
+          {/* Profile Icon */}
           <IconButton size="large" edge="end" color="inherit" onClick={handleProfileClick}>
             <AccountCircle />
           </IconButton>
         </Toolbar>
       </AppBar>
 
-      {/* Profile Card - Shows User Data if Logged In */}
+      {/* Profile Card - Appears when showProfile is true */}
       {showProfile && (
         <div ref={profileRef} style={{ position: "absolute", top: 60, right: 10 }}>
-          {userEmail ? (
-            <ProfileCard userEmail={userEmail} onClose={() => setShowProfile(false)} />
-          ) : (
-            <div className="profile-card">
-              <p className="text-danger">Login required to view profile.</p>
-              <button className="btn btn-sm btn-primary" onClick={() => setShowProfile(false)}>
-                Close
-              </button>
-            </div>
-          )}
+          <ProfileCard onClose={() => setShowProfile(false)} />
         </div>
       )}
-    </Box>
-  );
+    </Box>
+  );
 }

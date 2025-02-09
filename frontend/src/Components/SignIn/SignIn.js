@@ -4,7 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import "./SignIn.css";
 import DashBoard from "../DashBoard/DashBoard";
-import { Link } from "react-router-dom"; 
+
 import { useNavigate } from "react-router-dom";
 
 const schema = yup.object().shape({
@@ -33,11 +33,12 @@ const SignIn = ({ setUserData }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-
+  
       const result = await response.json();
       if (response.ok) {
-        alert("Login Successful");
+        
         setUserData(result.user);
+        localStorage.setItem("userEmail", result.user.email); // Store email in localStorage
         setIsAuthenticated(true);
       } else {
         setErrorMessage(result.message || "Invalid credentials");
@@ -47,6 +48,8 @@ const SignIn = ({ setUserData }) => {
     }
     setLoading(false);
   };
+  
+  
 
   if (isAuthenticated) {
     return <DashBoard />;
@@ -77,7 +80,7 @@ const SignIn = ({ setUserData }) => {
 
           <div className="input-group">
             <label>Password</label>
-            <input type="password" placeholder="********" {...register("password")} />
+            <input type="password" placeholder="your password" {...register("password")} />
             <p className="error">{errors.password?.message}</p>
           </div>
 
@@ -91,12 +94,10 @@ const SignIn = ({ setUserData }) => {
         <p className="signup-text">
           Don't have an account? <a href="/signup" onClick={(e) => { e.preventDefault(); navigate("/signup"); }}>Sign up</a>
         </p>
-        <p className="forgot-password-text">
-  <Link to="/forgot-password">Forgot Password?</Link>
-</p>
+     
       </div>
     </div>
   );
 };
 
-export default SignIn;
+export default SignIn;

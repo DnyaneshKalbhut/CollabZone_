@@ -33,7 +33,7 @@ const Quiz = () => {
       <Box sx={{ display: "flex" }}>
         <Sidenav />
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-          <h1>This is Quiz Window</h1>
+      
 
           {!selectedQuiz ? (
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 2 }}>

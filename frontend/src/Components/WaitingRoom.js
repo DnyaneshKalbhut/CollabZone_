@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import './WaitingRoom.css'; // Import the new CSS file
 
 const predefinedChatRooms = [
     'game',
@@ -31,29 +32,24 @@ const WaitingRoom = ({ JoinChatRoom }) => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-900">
-            <div className="w-full max-w-lg p-8 mx-4 bg-white rounded-lg shadow-lg md:mx-auto">
-                <h1 className="mb-4 text-2xl text-center text-gray-900 md:text-4xl md:mb-5 md:font-semibold">Welcome to ChatRoom</h1>
-                <h2 className="hidden mb-4 font-sans text-xl text-gray-900 md:text-2xl md:block">Join Chat Room</h2>
-                <div className="mb-4">
-                    <label className="block mb-2 text-gray-700">User Name</label>
+        <div className="waiting-room-container">
+            <div className="waiting-room-box">
+                <h1 className="waiting-room-title">Welcome to ChatRoom</h1>
+                <div className="waiting-room-input-group">
                     <input
                         type="text"
-                        className="w-full p-2 border rounded border-cyan-950"
+                        className="waiting-room-input"
                         value={userName}
                         required
                         onChange={(e) => setUserName(e.target.value)}
                         placeholder="Enter your name"
                     />
-                </div>
-                <div className="mb-4">
-                    <label className="block mb-2 text-gray-700">Chat Room</label>
                     <select
-                        className="w-full p-2 border rounded border-cyan-950"
+                        className="waiting-room-select"
                         onChange={handleChatRoomChange}
                         value={isCustomChatRoom ? 'custom' : chatRoom}
                     >
-                        <option value="custom">Create New Chat Room</option>
+                        <option value="custom">Create New Room</option>
                         {predefinedChatRooms.map(room => (
                             <option key={room} value={room}>
                                 {room}
@@ -63,18 +59,15 @@ const WaitingRoom = ({ JoinChatRoom }) => {
                     {isCustomChatRoom && (
                         <input
                             type="text"
-                            className="w-full p-2 mt-2 border rounded border-cyan-950"
+                            className="waiting-room-input"
                             value={chatRoom}
                             required
                             onChange={(e) => setChatRoom(e.target.value)}
-                            placeholder="Enter chat room name"
+                            placeholder="Room name"
                         />
                     )}
                 </div>
-                <button
-                    className="w-full p-2 text-white bg-blue-600 rounded hover:bg-blue-700"
-                    onClick={handleJoin}
-                >
+                <button className="waiting-room-button" onClick={handleJoin}>
                     Join Chat Room
                 </button>
             </div>

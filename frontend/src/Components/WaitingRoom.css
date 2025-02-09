@@ -1,0 +1,80 @@
+/* Waiting Room Container */
+.waiting-room-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f8f9fa; /* Light background */
+}
+
+/* Form Box */
+.waiting-room-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Headings */
+.waiting-room-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flexbox for input fields */
+.waiting-room-input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Common input styles */
+.waiting-room-input,
+.waiting-room-select {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #4a4e69;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.waiting-room-input:focus,
+.waiting-room-select:focus {
+    border-color: #1b98e0;
+    box-shadow: 0px 0px 6px rgba(27, 152, 224, 0.6);
+}
+
+/* Join Button */
+.waiting-room-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #1b98e0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.waiting-room-button:hover {
+    background-color: #1363df;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .waiting-room-input-group {
+        flex-direction: column;
+    }
+}
