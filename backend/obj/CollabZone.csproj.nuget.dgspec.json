@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj": {}
+    "F:\\CollabZone\\CollabZone-chatapp\\CollabZone\\backend\\CollabZone.csproj": {}
   },
   "projects": {
-    "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj": {
+    "F:\\CollabZone\\CollabZone-chatapp\\CollabZone\\backend\\CollabZone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj",
+        "projectUniqueName": "F:\\CollabZone\\CollabZone-chatapp\\CollabZone\\backend\\CollabZone.csproj",
         "projectName": "CollabZone",
-        "projectPath": "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj",
+        "projectPath": "F:\\CollabZone\\CollabZone-chatapp\\CollabZone\\backend\\CollabZone.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "F:\\2.0\\CollabZone\\backend\\obj\\",
+        "outputPath": "F:\\CollabZone\\CollabZone-chatapp\\CollabZone\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

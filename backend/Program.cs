@@ -42,5 +42,6 @@ app.MapControllers();
 // ✅ Map your SignalR Hub
 app.MapHub<ChatHub>("/chat"); // Ensure ChatHub exists
 
+
 // Run the application
 app.Run();

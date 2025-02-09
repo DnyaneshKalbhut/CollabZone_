@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CollabZone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18bc9ae64215500d876bf27179c2d8b6d2a50bfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("CollabZone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CollabZone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

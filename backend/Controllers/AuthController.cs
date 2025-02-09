@@ -70,7 +70,20 @@ namespace AuthAPI.Controllers
         [HttpGet("user/{email}")]
         public async Task<IActionResult> GetUserByEmail(string email)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email.ToLower() == email.ToLower());
+            if (string.IsNullOrEmpty(email))
+            {
+                return BadRequest(new { message = "Email is required" });
+            }
+
+            var user = await _context.Users
+                .Where(u => u.Email.ToLower() == email.ToLower())
+                .Select(u => new
+                {
+                    u.FullName,  // Corrected from "Name"
+                    u.Email,
+                    u.Aadhaar    // Corrected from "Aadhar"
+                })
+                .FirstOrDefaultAsync();
 
             if (user == null)
             {
@@ -79,7 +92,6 @@ namespace AuthAPI.Controllers
 
             return Ok(user);
         }
-
 
 
 
