@@ -1,53 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\",
+  "WorkspaceRootPath": "F:\\2.0\\CollabZone\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\hub\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:hub\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\migrations\\20250202175700_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:migrations\\20250202175700_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\models\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:models\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\data\\sharedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:data\\sharedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\collabzone.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:collabzone.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\models\\userconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:models\\userconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\data\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\data\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:data\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\migrations\\20250202175700_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:migrations\\20250202175700_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\models\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:models\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\collabzone.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:collabzone.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\collabzone\\collabzone-chatapp\\updateproj\\backend\\collabzone.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "AbsoluteMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|f:\\2.0\\collabzone\\backend\\collabzone.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{CE76D2ED-87D4-457C-A736-9967B1D84C7F}|CollabZone.csproj|solutionrelative:collabzone.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
@@ -58,15 +70,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "User.cs",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Models\\User.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Models\\User.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -83,11 +95,47 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserConnection.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Models\\UserConnection.cs",
+              "RelativeDocumentMoniker": "Models\\UserConnection.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Models\\UserConnection.cs",
+              "RelativeToolTip": "Models\\UserConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T18:39:47.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShareDb.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Data\\ShareDb.cs",
+              "RelativeDocumentMoniker": "Data\\ShareDb.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Data\\ShareDb.cs",
+              "RelativeToolTip": "Data\\ShareDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T18:38:57.134Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Hub\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Hub\\ChatHub.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Hub\\ChatHub.cs",
+              "RelativeToolTip": "Hub\\ChatHub.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T18:37:17.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "EventController.cs",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Controllers\\EventController.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventController.cs",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Controllers\\EventController.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Controllers\\EventController.cs",
               "RelativeToolTip": "Controllers\\EventController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -95,36 +143,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAYwDgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:52:08.13Z",
+              "WhenOpened": "2025-02-02T17:52:08.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:44:46.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:44:46.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "AuthDbContext.cs",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Data\\AuthDbContext.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Data\\AuthDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AuthDbContext.cs",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Data\\AuthDbContext.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Data\\AuthDbContext.cs",
               "RelativeToolTip": "Data\\AuthDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -132,11 +180,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "SignIn.cs",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Models\\SignIn.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Models\\SignIn.cs",
               "RelativeDocumentMoniker": "Models\\SignIn.cs",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Models\\SignIn.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Models\\SignIn.cs",
               "RelativeToolTip": "Models\\SignIn.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -144,11 +192,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "20250202175700_InitialCreate.cs",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Migrations\\20250202175700_InitialCreate.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Migrations\\20250202175700_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20250202175700_InitialCreate.cs",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Migrations\\20250202175700_InitialCreate.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Migrations\\20250202175700_InitialCreate.cs",
               "RelativeToolTip": "Migrations\\20250202175700_InitialCreate.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -156,11 +204,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\appsettings.json",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\appsettings.json",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -168,11 +216,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Event.cs",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Models\\Event.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Models\\Event.cs",
               "RelativeDocumentMoniker": "Models\\Event.cs",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Models\\Event.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Models\\Event.cs",
               "RelativeToolTip": "Models\\Event.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -180,11 +228,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "CollabZone.csproj",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\CollabZone.csproj",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj",
               "RelativeDocumentMoniker": "CollabZone.csproj",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\CollabZone.csproj",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj",
               "RelativeToolTip": "CollabZone.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -192,11 +240,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -204,11 +252,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "CollabZone.http",
-              "DocumentMoniker": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\CollabZone.http",
+              "DocumentMoniker": "F:\\2.0\\CollabZone\\backend\\CollabZone.http",
               "RelativeDocumentMoniker": "CollabZone.http",
-              "ToolTip": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\CollabZone.http",
+              "ToolTip": "F:\\2.0\\CollabZone\\backend\\CollabZone.http",
               "RelativeToolTip": "CollabZone.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",

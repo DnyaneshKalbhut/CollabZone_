@@ -1,4 +1,5 @@
-using AuthAPI.Data;
+﻿using AuthAPI.Data;
+using CollabZone.Hubs;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,12 +16,14 @@ builder.Services.AddCors(options =>
            .AllowAnyMethod()
            .AllowAnyHeader()
            .AllowCredentials());
-
 });
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// ✅ Add SignalR services
+builder.Services.AddSignalR(); // <-- Missing in your original code
 
 var app = builder.Build();
 
@@ -30,11 +33,14 @@ app.UseCors("AllowSpecificOrigin");
 // Enable Swagger UI (for API documentation)
 app.UseSwagger();
 app.UseSwaggerUI();
-
+app.UseHttpsRedirection();
 app.UseAuthorization();
 
 // Map controllers
 app.MapControllers();
+
+// ✅ Map your SignalR Hub
+app.MapHub<ChatHub>("/chat"); // Ensure ChatHub exists
 
 // Run the application
 app.Run();

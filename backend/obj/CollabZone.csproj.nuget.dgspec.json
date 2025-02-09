@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\CollabZone.csproj": {}
+    "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj": {}
   },
   "projects": {
-    "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\CollabZone.csproj": {
+    "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\CollabZone.csproj",
+        "projectUniqueName": "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj",
         "projectName": "CollabZone",
-        "projectPath": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\CollabZone.csproj",
+        "projectPath": "F:\\2.0\\CollabZone\\backend\\CollabZone.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "F:\\CollabZone\\CollabZone-chatapp\\UpdateProj\\backend\\obj\\",
+        "outputPath": "F:\\2.0\\CollabZone\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
